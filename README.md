@@ -14,7 +14,7 @@
   <h3 align="center">Disney+ Clone</h3>
 
   <p align="center">
-    project_description
+    Looks like Disney+  ...but its not. Just a fun project to learn Firebase and keep the React/Redux skills fresh. 
     <br />
     <a href="https://github.com/mplumer/disney-plus-clone"><strong>Explore the docs »</strong></a>
     <br />
@@ -57,11 +57,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `maxplumer12@gmail.com`, `Disney+ Clone`, `project_description`
+[![Disney+ Clone Screen Shot][product-screenshot]](https://www.youtube.com/watch?v=kn8HPNwPEkw)
 
 ### Built With
 
@@ -154,7 +150,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Max Plumer - [@twitter_handle](https://twitter.com/twitter_handle) - maxplumer12@gmail.com
+Max Plumer - [LinkedIn](https://www.linkedin.com/in/maxplumer/) - maxplumer12@gmail.com
 
 Project Link: [https://github.com/mplumer/disney-plus-clone](https://github.com/mplumer/disney-plus-clone)
 
@@ -163,8 +159,6 @@ Project Link: [https://github.com/mplumer/disney-plus-clone](https://github.com/
 ## Acknowledgements
 
 - [Clever Programmer](https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ)
-- []()
-- []()
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->

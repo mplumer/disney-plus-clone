@@ -14,7 +14,7 @@
   <h3 align="center">Disney+ Clone</h3>
 
   <p align="center">
-    Looks like Disney+  ...but its not. Just a fun project to learn Firebase and keep the React/Redux skills fresh. 
+    Looks like Disney+ ...but its not! Just a fun project to practice/showcase my skills in React/Redux, Styled-Components and Firebase. 
     <br />
     <a href="https://github.com/mplumer/disney-plus-clone"><strong>Explore the docs »</strong></a>
     <br />
@@ -131,7 +131,7 @@ Instead, it will copy all the configuration files and the transitive dependencie
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 
-_For more examples, please refer to the [Documentation](https://www.youtube.com/watch?v=kn8HPNwPEkw)_
+
 
 <!-- ROADMAP -->
 

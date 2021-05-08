@@ -34,7 +34,7 @@ function Header() {
 
   const signIn = () => {
     auth.signInWithPopup(provider).then((result) => {
-      let user = result.user;
+      let user = result.user
       dispatch(
         setUserLogin({
           name: user.displayName,
@@ -58,37 +58,37 @@ function Header() {
         <LoginContainer>
           <Login onClick={signIn}>Login</Login>
         </LoginContainer>
-      ) : 
+      ) : (
         <>
           <NavMenu>
             <a>
-              <img src="/images/home-icon.svg" />
+              <img src="/images/home-icon.svg" alt="home"/>
               <span>HOME</span>
             </a>
             <a>
-              <img src="/images/search-icon.svg" />
+              <img src="/images/search-icon.svg" alt="search"/>
               <span>SEARCH</span>
             </a>
             <a>
-              <img src="/images/watchlist-icon.svg" />
+              <img src="/images/watchlist-icon.svg" alt="watchlist"/>
               <span>WATCHLIST</span>
             </a>
             <a>
-              <img src="/images/original-icon.svg" />
+              <img src="/images/original-icon.svg" alt="originals"/>
               <span>ORIGINALS</span>
             </a>
             <a>
-              <img src="/images/movie-icon.svg" />
+              <img src="/images/movie-icon.svg" alt="movies"/>
               <span>MOVIES</span>
             </a>
             <a>
-              <img src="/images/series-icon.svg" />
+              <img src="/images/series-icon.svg" alt="series"/>
               <span>SERIES</span>
             </a>
           </NavMenu>
           <UserImg onClick={signOut} src={userPhoto} />
         </>
-      }
+      )}
     </Nav>
   );
 }

@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable react-hooks/exhaustive-deps */
 
 import React, { useEffect } from "react";
 import { auth, provider } from "../firebase";

@@ -2,7 +2,7 @@ import firebase from "firebase";
 
 const firebaseConfig = {
   apiKey: "AIzaSyA9BnlX96fMf7XiUVCFRsoQzG8DGERJkeY",
-  authDomain: "https://not-disney-plus.netlify.app/",
+  authDomain: "disneyplus-clone-a33d5.firebaseapp.com",
   projectId: "disneyplus-clone-a33d5",
   storageBucket: "disneyplus-clone-a33d5.appspot.com",
   messagingSenderId: "37918794208",

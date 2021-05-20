@@ -7,9 +7,9 @@ function Login() {
         <Container>
             <CTA>
                 <CTALogoOne src="/images/cta-logo-one.svg" />
-                <SignUp>GET ALL THERE</SignUp>
+                <SignUp>Signup Disabled</SignUp>
                 <Description>
-                    This clone was made by Maxwell Plumer. If you're looking for a full-stack developer, capable of producing "Disney-Quality" content -- reach out via <a href="https://www.linkedin.com/in/maxplumer/">LinkedIn</a>!
+                Please use google login on top right of page. This clone was made by Maxwell Plumer. If you're looking for a full-stack developer, capable of producing "Disney-Quality" content -- reach out via <a href="https://www.linkedin.com/in/maxplumer/">LinkedIn</a>!
                 </Description>
                 <CTALogoTwo src="/images/cta-logo-two.png" />
             </CTA>

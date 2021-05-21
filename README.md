@@ -8,7 +8,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/mplumer/disney-plus-clone">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="public/images/logo.svg" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Disney+ Clone</h3>
@@ -57,12 +57,13 @@
 
 ## About The Project
 
-[![Disney+ Clone Screen Shot][product-screenshot]](https://www.youtube.com/watch?v=kn8HPNwPEkw)
+[![Disney+ Clone Gif]](https://drive.google.com/file/d/15KymT6Rah9MyTHOIB-8L3TH1oxnpdkDm/view?usp=sharing)
 
 ### Built With
 
 - [React]()
 - [Redux]()
+- [Styled Components]()
 - [Firebase]()
 
 <!-- GETTING STARTED -->

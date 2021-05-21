@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
@@ -8,8 +7,7 @@ import Login from './components/Login';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from 'react-router-dom';
 
 function App() {
@@ -18,17 +16,17 @@ function App() {
       <Router>
         <Header />
         <Switch>
-        <Route path="/login">
+          <Route exact path="/">
             <Login />
+          </Route>
+          <Route path="/home">
+            <Home />
           </Route>
           <Route path="/detail/:id">
             <Detail />
           </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>  
-      </Router>     
+        </Switch>
+      </Router>  
     </div>
   );
 }

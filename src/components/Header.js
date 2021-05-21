@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable react-hooks/exhaustive-deps */
-
-=======
->>>>>>> develop
 import React, { useEffect } from "react";
 import { auth, provider } from "../firebase";
 import styled from "styled-components";

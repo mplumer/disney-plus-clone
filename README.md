@@ -1,14 +1,10 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <br />
 <p align="center">
   <a href="https://github.com/mplumer/disney-plus-clone">
-    <img src="public/images/logo.svg" alt="Logo" width="80" height="80">
+    <img src="/public/images/favicon.svg" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Disney+ Clone</h3>
@@ -155,11 +151,6 @@ Max Plumer - [LinkedIn](https://www.linkedin.com/in/maxplumer/) - maxplumer12@gm
 
 Project Link: [https://github.com/mplumer/disney-plus-clone](https://github.com/mplumer/disney-plus-clone)
 
-<!-- ACKNOWLEDGEMENTS -->
-
-## Acknowledgements
-
-- [Clever Programmer](https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->

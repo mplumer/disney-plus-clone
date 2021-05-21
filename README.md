@@ -4,11 +4,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/mplumer/disney-plus-clone">
-<<<<<<< HEAD
     <img src="/public/images/favicon.svg" alt="Logo" width="80" height="80">
-=======
-    <img src="public/images/logo.svg" alt="Logo" width="80" height="80">
->>>>>>> develop
   </a>
 
   <h3 align="center">Disney+ Clone</h3>

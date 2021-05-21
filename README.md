@@ -4,8 +4,9 @@
 <br />
 <p align="center">
   <a href="https://not-disney-plus.web.app/">
-    </p>
+    
     <img src="/public/images/favicon.svg" alt="Logo" width="80" height="80">
+    </p>
   </a>
 
   <h3 align="center">Disney+ Clone</h3>

@@ -4,9 +4,7 @@
 <br />
 <p align="center">
   <a href="https://not-disney-plus.web.app/">
-    
     <img src="/public/images/favicon.svg" alt="Logo" width="80" height="80">
-    </p>
   </a>
 
   <h3 align="center">Disney+ Clone</h3>
@@ -55,7 +53,9 @@
 
 ## About The Project
 
-[![Disney+ Clone Gif]](https://drive.google.com/file/d/15KymT6Rah9MyTHOIB-8L3TH1oxnpdkDm/view?usp=sharing)
+[Disney+ Clone Gif](https://drive.google.com/file/d/15KymT6Rah9MyTHOIB-8L3TH1oxnpdkDm/view?usp=sharing)
+
+[Link to deployed application](https://not-disney-plus.firebaseapp.com/)
 
 ### Built With
 

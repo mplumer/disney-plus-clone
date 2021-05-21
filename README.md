@@ -3,7 +3,7 @@
 
 <br />
 <p align="center">
-  <a href="https://github.com/mplumer/disney-plus-clone">
+  <a href="https://not-disney-plus.web.app/">
     <img src="/public/images/favicon.svg" alt="Logo" width="80" height="80">
   </a>
 
@@ -15,7 +15,7 @@
     <a href="https://github.com/mplumer/disney-plus-clone"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/mplumer/disney-plus-clone">View Demo</a>
+    <a href="https://not-disney-plus.web.app/">View Demo</a>
     ·
     <a href="https://github.com/mplumer/disney-plus-clone/issues">Report Bug</a>
     ·

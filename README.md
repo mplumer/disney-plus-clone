@@ -3,7 +3,11 @@
 
 <br />
 <p align="center">
+<<<<<<< HEAD
   <a href="https://github.com/mplumer/disney-plus-clone">
+=======
+  <a href="https://not-disney-plus.web.app/">
+>>>>>>> develop
     <img src="/public/images/favicon.svg" alt="Logo" width="80" height="80">
   </a>
 
@@ -15,7 +19,7 @@
     <a href="https://github.com/mplumer/disney-plus-clone"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/mplumer/disney-plus-clone">View Demo</a>
+    <a href="https://not-disney-plus.web.app/">View Demo</a>
     ·
     <a href="https://github.com/mplumer/disney-plus-clone/issues">Report Bug</a>
     ·
@@ -151,11 +155,6 @@ Max Plumer - [LinkedIn](https://www.linkedin.com/in/maxplumer/) - maxplumer12@gm
 
 Project Link: [https://github.com/mplumer/disney-plus-clone](https://github.com/mplumer/disney-plus-clone)
 
-<!-- ACKNOWLEDGEMENTS -->
-
-## Acknowledgements
-
-- [Clever Programmer](https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->

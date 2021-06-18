@@ -1,50 +1,3 @@
-<<<<<<< HEAD
-/* eslint-disable jsx-a11y/alt-text */
-import React from 'react'
-import styled from 'styled-components'
-
-function Login() {
-    return (
-        <Container>
-            <CTA>
-                <CTALogoOne src="/images/cta-logo-one.svg" />
-                <SignUp>Signup Disabled</SignUp>
-                <Description>
-                Please use google login on top right of page. This clone was made by Maxwell Plumer. If you're looking for a full-stack developer, capable of producing "Disney-Quality" content -- reach out via <a href="https://www.linkedin.com/in/maxplumer/">LinkedIn</a>!
-                </Description>
-                <CTALogoTwo src="/images/cta-logo-two.png" />
-            </CTA>
-        </Container>
-    )
-}
-
-export default Login
-
-const Container = styled.div`
-    height: calc(100vh - 70px);
-    position: relative;
-    display: flex;
-    align-items: top;
-    justify-content: center;
-
-    &:before {
-        background-position: top;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url("/images/login-background.jpg");
-        position: absolute;
-        content: "";
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        opacity: 0.7;
-        z-index: -1;
-    }
-
-
-`
-=======
 import styled from "styled-components";
 
 const Login = (props) => {
@@ -101,7 +54,6 @@ const BgImage = styled.div`
   left: 0;
   z-index: -1;
 `;
->>>>>>> develop
 
 const CTA = styled.div`
   max-width: 650px;
@@ -129,6 +81,7 @@ const SignUp = styled.a`
   padding: 16.5px 0;
   border: 1px solid transparent;
   border-radius: 4px;
+
   &:hover {
     background-color: #0483ee;
   }

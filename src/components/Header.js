@@ -1,14 +1,14 @@
-import React, { useEffect } from "react";
-import { auth, provider } from "../firebase";
+import { useEffect } from "react";
 import styled from "styled-components";
+import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
+import { auth, provider } from "../firebase";
 import {
   selectUserName,
   selectUserPhoto,
-   setUserLoginDetails,
+  setUserLoginDetails,
   setSignOutState,
 } from "../features/user/userSlice";
-import { useSelector, useDispatch } from "react-redux";
 
 const Header = (props) => {
   const dispatch = useDispatch();
@@ -59,47 +59,50 @@ const Header = (props) => {
   return (
     <Nav>
       <Logo>
-        <img src="/images/logo.svg" alt="Disney+" />
+        <img src="/images/logo.svg" alt="Disney+" href="/home" />
       </Logo>
 
       {!userName ? (
-        <Login>
-          <Login onClick={handleAuth}>Login</Login>
-        </Login>
+        <Login onClick={handleAuth}>Login</Login>
       ) : (
         <>
           <NavMenu>
-            <a>
-              <img src="/images/home-icon.svg" alt="home" />
+            <a href="/home">
+              <img src="/images/home-icon.svg" alt="HOME" />
               <span>HOME</span>
             </a>
             <a>
-              <img src="/images/search-icon.svg" alt="search" />
+              <img src="/images/search-icon.svg" alt="SEARCH" />
               <span>SEARCH</span>
             </a>
             <a>
-              <img src="/images/watchlist-icon.svg" alt="watchlist" />
+              <img src="/images/watchlist-icon.svg" alt="WATCHLIST" />
               <span>WATCHLIST</span>
             </a>
             <a>
-              <img src="/images/original-icon.svg" alt="originals" />
+              <img src="/images/original-icon.svg" alt="ORIGINALS" />
               <span>ORIGINALS</span>
             </a>
             <a>
-              <img src="/images/movie-icon.svg" alt="movies" />
+              <img src="/images/movie-icon.svg" alt="MOVIES" />
               <span>MOVIES</span>
             </a>
             <a>
-              <img src="/images/series-icon.svg" alt="series" />
+              <img src="/images/series-icon.svg" alt="SERIES" />
               <span>SERIES</span>
             </a>
           </NavMenu>
-          <UserImg onClick={handleAuth} src={userPhoto} />
+          <SignOut>
+            <UserImg src={userPhoto} alt={userName} />
+            <DropDown>
+              <span onClick={handleAuth}>Sign out</span>
+            </DropDown>
+          </SignOut>
         </>
       )}
     </Nav>
   );
-}
+};
 
 const Nav = styled.nav`
   position: fixed;
@@ -107,7 +110,7 @@ const Nav = styled.nav`
   left: 0;
   right: 0;
   height: 70px;
-  background: #090b13;
+  background-color: #090b13;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -123,6 +126,7 @@ const Logo = styled.a`
   max-height: 70px;
   font-size: 0;
   display: inline-block;
+
   img {
     display: block;
     width: 100%;
@@ -130,23 +134,21 @@ const Logo = styled.a`
 `;
 
 const NavMenu = styled.div`
+  align-items: center;
   display: flex;
-  flex: 1;
   flex-flow: row nowrap;
   height: 100%;
   justify-content: flex-end;
   margin: 0px;
   padding: 0px;
   position: relative;
-  margin-left: 25px;
   margin-right: auto;
-  align-items: center;
+  margin-left: 25px;
 
   a {
     display: flex;
     align-items: center;
     padding: 0 12px;
-    cursor: pointer;
 
     img {
       height: 20px;
@@ -183,7 +185,7 @@ const NavMenu = styled.div`
     }
 
     &:hover {
-      spanbefore {
+      span:before {
         transform: scaleX(1);
         visibility: visible;
         opacity: 1 !important;
@@ -196,25 +198,24 @@ const NavMenu = styled.div`
   } */
 `;
 
-const UserImg = styled.img`
-  height: 100%;
-`;
-
 const Login = styled.a`
-  border: 1px solid #f9f9f9;
-  padding: 8px 16px;
-  border-radius: 4px;
-  letter-spacing: 1.5px;
-  tetxt-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.6);
+  padding: 8px 16px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border: 1px solid #f9f9f9;
+  border-radius: 4px;
   transition: all 0.2s ease 0s;
-  cursor: pointer;
 
   &:hover {
     background-color: #f9f9f9;
     color: #000;
     border-color: transparent;
   }
+`;
+
+const UserImg = styled.img`
+  height: 100%;
 `;
 
 const DropDown = styled.div`
@@ -240,11 +241,13 @@ const SignOut = styled.div`
   cursor: pointer;
   align-items: center;
   justify-content: center;
+
   ${UserImg} {
     border-radius: 50%;
     width: 100%;
     height: 100%;
   }
+
   &:hover {
     ${DropDown} {
       opacity: 1;

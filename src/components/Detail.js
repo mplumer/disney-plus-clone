@@ -1,12 +1,11 @@
-/* eslint-disable jsx-a11y/alt-text */
-import React, { useEffect, useState } from "react";
-import styled from "styled-components";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import styled from "styled-components";
 import db from "../firebase";
 
 const Detail = (props) => {
   const { id } = useParams();
-  const [movie, setmovie] = useState({});
+  const [detailData, setDetailData] = useState({});
 
   useEffect(() => {
     db.collection("movies")
@@ -14,7 +13,7 @@ const Detail = (props) => {
       .get()
       .then((doc) => {
         if (doc.exists) {
-          setmovie(doc.data());
+          setDetailData(doc.data());
         } else {
           console.log("no such document in firebase 🔥");
         }
@@ -27,11 +26,11 @@ const Detail = (props) => {
   return (
     <Container>
       <Background>
-        <img alt={movie.title} src={movie.backgroundImg} />
+        <img alt={detailData.title} src={detailData.backgroundImg} />
       </Background>
 
       <ImageTitle>
-        <img alt={movie.title} src={movie.titleImg} />
+        <img alt={detailData.title} src={detailData.titleImg} />
       </ImageTitle>
       <ContentMeta>
         <Controls>
@@ -53,8 +52,8 @@ const Detail = (props) => {
             </div>
           </GroupWatch>
         </Controls>
-        <SubTitle>{movie.subTitle}</SubTitle>
-        <Description>{movie.description}</Description>
+        <SubTitle>{detailData.subTitle}</SubTitle>
+        <Description>{detailData.description}</Description>
       </ContentMeta>
     </Container>
   );
@@ -76,9 +75,11 @@ const Background = styled.div`
   right: 0px;
   top: 0px;
   z-index: -1;
+
   img {
     width: 100vw;
     height: 100vh;
+
     @media (max-width: 768px) {
       width: initial;
     }
@@ -95,6 +96,7 @@ const ImageTitle = styled.div`
   min-height: 170px;
   padding-bottom: 24px;
   width: 100%;
+
   img {
     max-width: 600px;
     min-width: 200px;
@@ -130,17 +132,21 @@ const Player = styled.button`
   background: rgb (249, 249, 249);
   border: none;
   color: rgb(0, 0, 0);
+
   img {
     width: 32px;
   }
+
   &:hover {
     background: rgb(198, 198, 198);
   }
+
   @media (max-width: 768px) {
     height: 45px;
     padding: 0px 12px;
     font-size: 12px;
     margin: 0px 10px 0px 0px;
+
     img {
       width: 25px;
     }
@@ -164,14 +170,17 @@ const AddList = styled.div`
   border-radius: 50%;
   border: 2px solid white;
   cursor: pointer;
+
   span {
     background-color: rgb(249, 249, 249);
     display: inline-block;
+
     &:first-child {
       height: 2px;
       transform: translate(1px, 0px) rotate(0deg);
       width: 16px;
     }
+
     &:nth-child(2) {
       height: 16px;
       transform: translateX(-8px) rotate(0deg);
@@ -189,11 +198,13 @@ const GroupWatch = styled.div`
   align-items: center;
   cursor: pointer;
   background: white;
+
   div {
     height: 40px;
     width: 40px;
     background: rgb(0, 0, 0);
     border-radius: 50%;
+
     img {
       width: 100%;
     }
@@ -204,6 +215,7 @@ const SubTitle = styled.div`
   color: rgb(249, 249, 249);
   font-size: 15px;
   min-height: 20px;
+
   @media (max-width: 768px) {
     font-size: 12px;
   }
@@ -214,6 +226,7 @@ const Description = styled.div`
   font-size: 20px;
   padding: 16px 0px;
   color: rgb(249, 249, 249);
+
   @media (max-width: 768px) {
     font-size: 14px;
   }

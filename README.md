@@ -53,7 +53,9 @@
 
 ## About The Project
 
-[![Disney+ Clone Gif]](https://drive.google.com/file/d/15KymT6Rah9MyTHOIB-8L3TH1oxnpdkDm/view?usp=sharing)
+[Disney+ Clone Gif](https://drive.google.com/file/d/15KymT6Rah9MyTHOIB-8L3TH1oxnpdkDm/view?usp=sharing)
+
+[Link to deployed application](https://not-disney-plus.firebaseapp.com/)
 
 ### Built With
 

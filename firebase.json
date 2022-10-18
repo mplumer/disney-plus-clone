@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "not-disney-plus",
     "public": "build",
     "ignore": [
       "firebase.json",
